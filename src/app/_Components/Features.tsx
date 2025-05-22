@@ -13,7 +13,7 @@ const Features = () => {
     <div className="w-full container mx-auto p-4">
       <div className="pb-6">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="flex justify-start bg-transparent p-0 space-x-8">
+          <TabsList className="flex justify-start flex-wrap bg-transparent p-0 space-x-8">
             {["overview", "features", "reviews"].map((tab) => (
               <TabsTrigger
                 key={tab}
@@ -29,7 +29,7 @@ const Features = () => {
               </TabsTrigger>
             ))}
 
-            <div className="ml-auto">
+            <div className="ml-auto mt-2 md:mt-auto">
               <Button className="bg-blue-500 hover:bg-blue-600 rounded-full px-6">
                 <MessageSquareDot size={30} />
                 Message
@@ -38,7 +38,7 @@ const Features = () => {
           </TabsList>
 
 
-          <div className="flex justify-between items-center ">
+          <div className="flex flex-col md:flex-row justify-between items-center ">
             <div className="mt-6">
               <TabsContent value="overview" className="mt-0 p-0">
                 <PropertyDetails />

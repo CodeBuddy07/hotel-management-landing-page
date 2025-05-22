@@ -16,7 +16,7 @@ const imagePaths = [
 const Header = () => {
     return (
         <div className="container mx-auto px-4 py-10">
-            <div className="flex justify-between items-center mb-6">
+            <div className="flex flex-col md:flex-row justify-between  mb-6">
                 <div>
                     <h1 className="text-3xl font-bold mb-2">El Aurassi Hotel</h1>
                     <p className="text-muted-foreground mb-6 max-w-md">	
@@ -56,7 +56,7 @@ const Header = () => {
                     ))}
                 </div>
 
-                <div className="lg:col-span-3 grid grid-cols-6 gap-4">
+                <div className="lg:col-span-3 grid lg:grid-cols-6 grid-col-2 gap-4">
                     {imagePaths.slice(2).map((path, idx) => (
                         <Image
                             key={idx}

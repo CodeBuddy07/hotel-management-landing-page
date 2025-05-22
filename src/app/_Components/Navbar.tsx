@@ -119,7 +119,7 @@ const Navbar = () => {
                         />
                     </Link>
 
-                    <nav className="hidden md:flex items-center ml-8 space-x-6">
+                    <nav className="hidden lg:flex items-center ml-8 space-x-6">
                         {navItems.map((item) => (
                             <Link
                                 key={item.path}
@@ -137,7 +137,7 @@ const Navbar = () => {
                     </nav>
                 </div>
 
-                <div className="md:hidden">
+                <div className="lg:hidden">
                     <Sheet>
                         <SheetTrigger asChild>
                             <Button variant="ghost" size="icon" className="text-gray-600 hover:text-blue-600 focus:outline-none">
@@ -250,7 +250,7 @@ const Navbar = () => {
                     </Sheet>
                 </div>
 
-                <div className="hidden md:flex items-center space-x-3">
+                <div className="hidden lg:flex items-center space-x-3">
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
                             <Button variant="outline" size="sm" className="rounded-full h-8 px-3 py-1 flex items-center gap-1">

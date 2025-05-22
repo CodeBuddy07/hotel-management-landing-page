@@ -25,13 +25,13 @@ export function RoomGuestSelector() {
       <PopoverTrigger asChild>
         <Button
           variant="outline"
-          className="w-[250px] justify-start rounded-full px-4 py-2 bg-gray-100 text-sm"
+          className="lg:w-[250px] justify-start rounded-full px-4 py-2 bg-gray-100 text-sm"
         >
           <HomeIcon className="mr-2 h-4 w-4 text-blue-500" />
           {label}
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[280px] space-y-4">
+      <PopoverContent className="lg:w-[280px] w-full space-y-4">
         {[
           { label: "Adults", value: adults, onChange: (val: number) => handleChange("adults", val) },
           { label: "Children", value: children, onChange: (val: number) => handleChange("children", val) },
