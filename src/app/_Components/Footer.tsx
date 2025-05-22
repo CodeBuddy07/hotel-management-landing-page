@@ -3,6 +3,7 @@ import { Twitter, Facebook, Instagram, Github, MapPin, Phone, Mail, Smartphone, 
 import Link from 'next/link';
 import Image from 'next/image';
 
+
 const Footer = () => {
     return (
         <footer className="bg-[#00548C] text-white">
@@ -85,12 +86,21 @@ const Footer = () => {
 
                             <div className="flex space-x-3">
                                 <a href="#" className="flex items-center space-x-2 bg-white/10 hover:bg-white/20 rounded-lg px-3 py-2 transition-colors duration-200">
-                                    <Smartphone className="w-6 h-6" />
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.5652 9.94441C16.2348 11.296 14.4763 12.2668 10.9594 14.2082C7.13429 16.3198 5.22174 17.3756 3.67258 16.9688C3.1479 16.8311 2.66465 16.5888 2.25887 16.2602C1.06079 15.2898 1.06079 13.2753 1.06079 9.24639C1.06079 5.21743 1.06079 3.20295 2.25887 2.2326C2.66465 1.90395 3.1479 1.66171 3.67258 1.52395C5.22174 1.11719 7.13428 2.17297 10.9594 4.28454C14.4763 6.22601 16.2348 7.19675 16.5652 8.54837C16.6777 9.00825 16.6777 9.48453 16.5652 9.94441Z" stroke="white" stroke-width="1.41844" stroke-linejoin="round" />
+                                        <path d="M2.47791 16.4315L13.8152 5.94595M2.47791 2.23438L13.8152 12.7199" stroke="white" stroke-width="1.41844" stroke-linejoin="round" />
+                                    </svg>
                                 </a>
 
                                 {/* iOS */}
                                 <a href="#" className="flex items-center space-x-2 bg-white/10 hover:bg-white/20 rounded-lg px-3 py-2 transition-colors duration-200">
-                                    <Apple className="w-6 h-6" />
+                                    <Image
+                                        src="/apple.svg"
+                                        alt="Apple Store"
+                                        width={100}
+                                        height={100}
+                                        className="h-6 w-auto"
+                                    />
                                 </a>
                             </div>
                         </div>

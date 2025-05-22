@@ -127,7 +127,7 @@ const Navbar = () => {
                                 className={cn(
                                     "font-medium relative py-2 transition-colors",
                                     isActivePath(item.path)
-                                        ? "text-blue-600 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-600"
+                                        ? "text-blue-600 font-semibold"
                                         : "text-gray-600 hover:text-blue-600"
                                 )}
                             >
