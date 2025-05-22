@@ -1,6 +1,7 @@
 import { AvailabilityForm } from "./_Components/AvailabilityForm";
 import Features from "./_Components/Features";
 import Header from "./_Components/Header";
+import HotelRecommendations from "./_Components/HotelReccomendation";
 import PropertyDetails from "./_Components/PropertyDetails";
 import PropertyPolicies from "./_Components/PropertyPolicies";
 import RoomSelector from "./_Components/RoomSelector";
@@ -16,6 +17,7 @@ export default function Home() {
       <PropertyDetails/>
       <TestimonialsSlider/>
       <PropertyPolicies/>
+      <HotelRecommendations/>
     </div>
   );
 }
