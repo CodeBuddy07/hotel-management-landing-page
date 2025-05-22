@@ -1,5 +1,5 @@
 import React from 'react';
-import { Twitter, Facebook, Instagram, Github, MapPin, Phone, Mail, Smartphone, Apple } from 'lucide-react';
+import { Twitter, Facebook, Instagram, Github, MapPin, Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
